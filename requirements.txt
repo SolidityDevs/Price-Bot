@@ -11,3 +11,4 @@ beautifulsoup4
 plotly
 python-telegram-bot
 kaleido
+python-dotenv
