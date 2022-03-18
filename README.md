@@ -19,4 +19,5 @@ remeber to change your bot token and add cmc keys
 # Contributions Allowed
 
 # t.me/SolidityDevelopers
+* demo @Cointendbot
 
