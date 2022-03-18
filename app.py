@@ -35,11 +35,9 @@ def listing(update,context) -> None:
     message = update.message
     sending = asyncio.run(send_latest_listings(message=message))  
     
-def chart(update,context) -> None:
-    message = update.message
-   
-def i(update,context):
-    asyncio.run(get_dps("btc","usd"))
+
+def start(update,context) -> None:
+    update.message.reply_text(f"Hello this bot is open source you can fork from https://github.com/SolidityDevs/Price-Bot.git" )
 
 def main() -> None:
     # Create the Updater and pass it your bot's token.
