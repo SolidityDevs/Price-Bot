@@ -40,7 +40,7 @@ def listing(update,context) -> None:
     
 
 def start(update,context) -> None:
-    update.message.reply_text(f"Hello this bot is open source you can fork from https://github.com/SolidityDevs/Price-Bot.git" )
+    update.message.reply_text(f"Hello this bot is open source you can fork from https://github.com/SolidityDevs/Price-Bot.git\n\nCommands\n/p btc\n/listing\n/trending\n/news" )
 
 def main() -> None:
     # Create the Updater and pass it your bot's token.
@@ -52,6 +52,7 @@ def main() -> None:
     updater.dispatcher.add_handler(CommandHandler('trending', trending))
     updater.dispatcher.add_handler(CommandHandler('listing', listing))
     updater.dispatcher.add_handler(CommandHandler('news', news))
+    updater.dispatcher.add_handler(CommandHandler('start', start))
     updater.dispatcher.add_handler(CallbackQueryHandler(refresh))
     
     updater.start_polling()
