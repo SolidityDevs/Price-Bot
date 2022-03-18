@@ -1,0 +1,13 @@
+aiohttp
+requests
+pandas
+aiocoingecko
+inflection
+pydantic
+humanize
+python-coinmarketcap
+html5lib
+beautifulsoup4
+plotly
+python-telegram-bot
+-U kaleido
