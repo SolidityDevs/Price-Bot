@@ -1,12 +1,22 @@
 # Price-Bot
 
 
-#Open Source
+Open Source
 
 try running some of the following task
 
-#pip install --upgrade -r requirements.txt
+git clone https://github.com/SolidityDevs/Price-Bot.git
 
-#python3 app.py
+cd Price-Bot
 
+pip install --upgrade -r requirements.txt
+
+python3 app.py
+
+
+remeber to change your bot token and add cmc keys 
+
+# Contributions Allowed
+
+# t.me/SolidityDevelopers
 
