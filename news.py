@@ -6,7 +6,13 @@ import telegram
 from telegram import *
 from telegram.ext import *
 
-NEWS_TOKEN = '55300a48e8ca229c7ec4a11fea16fa184e8c3c7f'
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+NEWS_TOKEN = os.getenv('news_api')
+
+
 def news(update, context):
     #Returns the latest news when /news is invoked.
     url = "https://cryptopanic.com/api/v1/posts/?auth_token="+NEWS_TOKEN+"&kind=news"
