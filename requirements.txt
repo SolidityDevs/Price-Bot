@@ -10,4 +10,4 @@ html5lib
 beautifulsoup4
 plotly
 python-telegram-bot
--U kaleido
+kaleido
