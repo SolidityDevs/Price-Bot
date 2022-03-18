@@ -6,7 +6,10 @@ from telegram.ext import *
 from telegram import *
 import telegram
 from news import *
-
+import os
+from dotenv import load_dotenv
+load_dotenv()
+bot_api = os.getenv('bot_token')
 log_folder = Path.home().joinpath("logs")
 Path(log_folder).mkdir(parents=True, exist_ok=True)
 log_file = log_folder.joinpath("cointend.log")
@@ -41,8 +44,8 @@ def start(update,context) -> None:
 
 def main() -> None:
     # Create the Updater and pass it your bot's token.
-    token = "5157905660:AAGzKeyEyrL4dAB152P5oCK8uyPhmpBuUGg"
-    updater = Updater(token)
+    
+    updater = Updater(bot_api)
    
     print('started bot')
     updater.dispatcher.add_handler(CommandHandler('p', p))
